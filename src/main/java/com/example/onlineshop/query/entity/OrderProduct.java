@@ -7,10 +7,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.ManyToOne;
+import jakarta.persistence.ManyToOne;
 
 @Data
-@Builder
 @NoArgsConstructor
 @Entity
 public class OrderProduct extends BasicEntity{

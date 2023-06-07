@@ -2,18 +2,16 @@ package com.example.onlineshop.query.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import lombok.Builder;
+import jakarta.persistence.GeneratedValue;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import java.util.List;
 
 @Data
-@Builder
 @NoArgsConstructor
 @Entity
 public class Order extends BasicEntity{

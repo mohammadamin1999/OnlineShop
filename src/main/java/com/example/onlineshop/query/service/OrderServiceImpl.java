@@ -27,7 +27,9 @@ public class OrderServiceImpl implements OrderService {
     @EventHandler
     public void on(OrderCreatedEvent event) {
         log.info("Handling OrderCreatedEvent .....");
-        Order order = Order.builder().totalPrice(event.getTotalPrice()).status("CREATED").build();
+        Order order = new Order();
+        order.setStatus("CREATED");
+        order.setTotalPrice(event.getTotalPrice());
         orderRepository.save(order);
     }
 

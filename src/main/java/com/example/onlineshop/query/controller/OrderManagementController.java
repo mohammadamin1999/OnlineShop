@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/manage-order")
-public class OrderController {
+public class OrderManagementController {
 
     private final QueryGateway queryGateway;
 
-    public OrderController(QueryGateway queryGateway) {
+    public OrderManagementController(QueryGateway queryGateway) {
         this.queryGateway = queryGateway;
     }
 
